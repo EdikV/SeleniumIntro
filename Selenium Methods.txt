@@ -1,0 +1,1 @@
+driver.get - load a new webpage in the current browser window.

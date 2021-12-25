@@ -1,0 +1,21 @@
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class selintroduction implements WebDriver {
+
+	public static void main(String[] args) {
+		//Invoking the browser
+		//To use chrome - ChromeDriver is needed -> Methods are actions you perform
+		//first we need to create an object named driver to access the methods of class
+		
+		ChromeDriver driver = new ChromeDriver();
+		
+		
+		//Firefox- FirefoxDriver ->methods, these methods are common across all browsers in selenium
+		//the basis of every driver is called WebDriver, and on-top of that additional class methods were 
+		//created.
+		//The WebDriver is called and interface, its a group of methods with empty bodies (user needs to set 
+		//data). 
+		//Its class responsibility to implement the methods declared in the interface
+	}
+
+}

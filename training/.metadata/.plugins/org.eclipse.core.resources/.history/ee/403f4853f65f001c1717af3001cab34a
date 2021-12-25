@@ -1,0 +1,36 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class selintroduction {
+//WebDriver is an interface
+//Selintroduction is a class that inherited the WebDriver methods.
+//to use class selintroduction, it needs to inherit the webdriver methods.
+	
+
+	public static void main(String[] args) {
+		//Invoking the browser
+		//To use chrome - ChromeDriver is needed -> Methods are actions you perform
+		//first we need to create an object named driver to access the methods of class
+		//ChromeDriver = WebDriver methods+ internal call methods
+		//ChromeDriver driver = new ChromeDriver(); //Object driver inherits chromedriver methods
+		//ChromeDriver.exe -> Chrome Browser driver that will allow selenium to access the chrome browser.
+		System.setProperty("webdriver.chrome.driver", "c:/Users/edwardv/selenium/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.w3schools.com/java/java_interface.asp"); //opens chrome and navigates to a url
+		System.out.println(driver.getTitle()); //gets the title of the webpage and prints it out
+		System.out.print(driver.getCurrentUrl());
+		driver.close();
+		
+		//driver object 
+		
+		//Firefox- FirefoxDriver ->methods, these methods are common across all browsers in selenium
+		//the basis of every driver is called WebDriver, and on-top of that additional class methods were 
+		//created.
+		
+		
+		
+
+	}
+
+}
