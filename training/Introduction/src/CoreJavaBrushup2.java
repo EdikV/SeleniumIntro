@@ -10,6 +10,7 @@ public class CoreJavaBrushup2 {
         for (int s:arr2) {
             if (arr2[s] % 2 == 0) {
                 System.out.println(arr2[s]);
+                // if you want to break a loop, just use the brake;
             }
             else
             {
