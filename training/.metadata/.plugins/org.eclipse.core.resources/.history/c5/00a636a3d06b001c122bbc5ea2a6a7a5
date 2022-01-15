@@ -1,0 +1,27 @@
+
+
+public class CoreJavaBrushup3 {
+    public static void main(String[] args) {
+        //String in Java is an object
+
+        String s2= new String("Hello Peter Parker");
+        // You can choose how to split a string with split command
+        String[] splitted = s2.split(" ");
+        System.out.print(splitted[0]);
+        System.out.print(splitted[1]);
+        System.out.print(splitted[2]);
+
+        
+
+        // If you want to trim excess spaces from a string you can use the s.trim()
+
+
+
+
+
+
+
+
+
+
+    }}
