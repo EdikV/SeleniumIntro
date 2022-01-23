@@ -3,7 +3,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class Locators {
     public static void main(String[] args){
@@ -17,7 +16,8 @@ public class Locators {
         System.out.println(driver.findElement(By.cssSelector(".error")).getText());
         driver.findElement(By.linkText("Forgot your password?")).click();
         driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Edward");
-
+        driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("1@abc.com");
+        driver.findElement(By.cssSelector("input[placeholder='Email']")).clear();
 
         //================================================================//
         //driver.findElement(By.className("btn-mute")).click();
