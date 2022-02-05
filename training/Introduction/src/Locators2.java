@@ -1,14 +1,20 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+
+import java.time.Duration;
 
 
 public class Locators2 {
     public static void main(String[] args) throws InterruptedException {
         String Uname="a@bcd.com";
-        System.setProperty("webdriver.chrome.driver", "c:/Users/edwardv/selenium/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        // System.setProperty("webdriver.chrome.driver", "c:/Users/edwardv/selenium/chromedriver.exe");
+        //WebDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.gecko.driver", "c:/Users/edwardv/selenium/geckodriver.exe");
+        WebDriver driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         String Pwd= getpwd(driver);
         driver.get("https://rahulshettyacademy.com/locatorspractice/");
         driver.findElement(By.id("inputUsername")).sendKeys(Uname);
@@ -20,7 +26,7 @@ public class Locators2 {
         Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(),"Hello " +Uname +",");
         driver.findElement(By.xpath("//button[text()='Log Out']")).click();
         Thread.sleep(1000);
-        //driver.close();
+        driver.close();
 
 
     }
