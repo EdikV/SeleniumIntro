@@ -1,3 +1,5 @@
+package corejava;
+
 import java.util.ArrayList;
 
 public class CoreJavaBrushup2 {

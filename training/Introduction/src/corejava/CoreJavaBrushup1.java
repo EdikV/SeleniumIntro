@@ -1,3 +1,4 @@
+package corejava;
 public class CoreJavaBrushup1 {
     public static void main(String[] args) {
         /* Auto generated method stub */
